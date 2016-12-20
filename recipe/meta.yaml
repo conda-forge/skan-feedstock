@@ -1,6 +1,6 @@
 {% set name = "skan" %}
-{% set version = "0.1.3" %}
-{% set sha256 = "6ae7573a799177fae01032a78892471078d1e466e2a371060c98713452016a01" %}
+{% set version = "0.2" %}
+{% set sha256 = "c62c2decb810b73f25c3edbf8dd07228a983a4bff5d7db95c633f5804c2e5cea" %}
 
 package:
   name: {{ name|lower }}
@@ -27,6 +27,8 @@ requirements:
     - networkx >=1.11
     - pandas >=0.18
     - numba >=0.29
+    - matplotlib >=1.5
+    - scikit-image >=0.12
 
 test:
   requires:
