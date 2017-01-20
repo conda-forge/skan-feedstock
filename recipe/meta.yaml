@@ -1,6 +1,6 @@
 {% set name = "skan" %}
-{% set version = "0.2" %}
-{% set sha256 = "c62c2decb810b73f25c3edbf8dd07228a983a4bff5d7db95c633f5804c2e5cea" %}
+{% set version = "0.3.3" %}
+{% set sha256 = "c908af4fe817be623d82b532a4800797ad9f781c00a416541a5f547aa2c1d25f" %}
 
 package:
   name: {{ name|lower }}
@@ -29,10 +29,14 @@ requirements:
     - numba >=0.29
     - matplotlib >=1.5
     - scikit-image >=0.12
+    - imageio >=2.0
+    - tqdm >=4.11
+    - nose >=1.3
 
 test:
   requires:
     - pytest
+    - hypothesis
   imports:
     - skan
   commands:
