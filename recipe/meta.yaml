@@ -1,6 +1,6 @@
 {% set name = "skan" %}
-{% set version = "0.6.3" %}
-{% set sha256 = "aa067c7dd04868b13a44e43d257704ad11ad5571cc9c8bdb00ef675cda8191f0" %}
+{% set version = "0.7.1" %}
+{% set sha256 = "433fa098ab1ae6cfb4812fe967c80acbbca0ab13957633dd4e9f2a0d9a024a9a" %}
 
 package:
   name: {{ name|lower }}
