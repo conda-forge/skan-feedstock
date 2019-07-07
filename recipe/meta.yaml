@@ -1,27 +1,26 @@
-{% set name = "skan" %}
 {% set version = "0.8" %}
-{% set sha256 = "d5f369156b51f405e5ab2982c05df3a522e39abc97ac25501ca2a7bdeccfb730" %}
 
 package:
-  name: {{ name|lower }}
+  name: skan
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/s/skan/skan-{{ version }}.tar.gz
+  sha256: d5f369156b51f405e5ab2982c05df3a522e39abc97ac25501ca2a7bdeccfb730
 
 build:
   number: 0
-  skip : True  # [py<36]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  entry_points:
+    - skan-gui = skan.gui:launch
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - numpy >=1.11
     - scipy >=0.18
     - networkx >=1.11
@@ -37,17 +36,12 @@ requirements:
     - click >=0.5
 
 test:
-  requires:
-    - pytest
-    - hypothesis
   imports:
     - skan
-  commands:
-    - py.test --pyargs skan --doctest-modules
 
 about:
   home: http://github.com/jni/skan
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'skan: skeleton analysis in Python'
 
