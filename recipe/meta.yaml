@@ -9,7 +9,7 @@ source:
   sha256: d5f369156b51f405e5ab2982c05df3a522e39abc97ac25501ca2a7bdeccfb730
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
@@ -28,7 +28,7 @@ requirements:
     - openpyxl >=2.4
     - xlrd >=1.0
     - numba >=0.29
-    - matplotlib >=1.5
+    - matplotlib-base >=1.5
     - scikit-image >=0.12
     - imageio >=2.0
     - tqdm >=4.11
