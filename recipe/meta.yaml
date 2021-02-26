@@ -1,4 +1,4 @@
-{% set version = "0.8" %}
+{% set version = "0.9" %}
 
 package:
   name: skan
@@ -6,17 +6,17 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/skan/skan-{{ version }}.tar.gz
-  sha256: d5f369156b51f405e5ab2982c05df3a522e39abc97ac25501ca2a7bdeccfb730
+  sha256: 41a263bd925365ff2ad86d9841e9e65259af7bce3f95504983a0af56b1a26b9d
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - skan-gui = skan.gui:launch
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
