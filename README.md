@@ -1,11 +1,11 @@
-About skan
-==========
+About skan-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skan-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/jni/skan
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skan-feedstock/blob/main/LICENSE.txt)
 
 Summary: skan: skeleton analysis in Python
 
