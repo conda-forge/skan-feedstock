@@ -1,4 +1,4 @@
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 package:
   name: skan
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/s/skan/skan-{{ version }}.tar.gz
-  sha256: d5439c17fbf5f86386a7548acb6ab11482961164a6284047b9bdc6652a0d1faf
+  sha256: 94d0625fba67931fb9e4ea8463c05cbfbb5f1635303120c7454afe2dd6b7c2c5
 
 build:
   number: 0
