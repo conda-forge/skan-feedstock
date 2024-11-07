@@ -15,21 +15,22 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
-    - numpy >=1.21
-    - scipy >=1.7
-    - networkx >=2.7
-    - pandas >=2.0.2
-    - openpyxl >=2.6
-    - numba >=0.53
-    - matplotlib-base >=3.4
-    - scikit-image >=0.17.1
+    - python >=3.9
     - imageio >=2.10.1
-    - tqdm >=4.57.0
+    - magicgui >=0.7.3
+    - matplotlib-base >=3.4
+    - networkx >=2.7
+    - numba >=0.53
+    - numpy >=1.25
+    - openpyxl >=2.6
+    - pandas >=2.0.2
+    - scikit-image >=0.17.1
+    - scipy >=1.7
     - toolz >=0.10.0
+    - tqdm >=4.57.0
 
 test:
   imports:
