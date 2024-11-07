@@ -17,6 +17,8 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
+    - setuptools-scm
   run:
     - python >=3.9
     - imageio >=2.10.1
