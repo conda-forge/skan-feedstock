@@ -1,4 +1,5 @@
 {% set version = "0.12.2" %}
+{% set python_min = "3.9" %}
 
 package:
   name: skan
@@ -15,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >={{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - imageio >=2.10.1
     - magicgui >=0.7.3
     - matplotlib-base >=3.4
