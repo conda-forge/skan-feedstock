@@ -1,4 +1,5 @@
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
+{% set python_min = "3.9" %}
 
 package:
   name: skan
@@ -6,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/skan/skan-{{ version }}.tar.gz
-  sha256: e97086084b1a6d0fd4abcffd08f371c5a91759ee175153be6c6027b90aec9771
+  sha256: 5c9e5c2dc169f2f4972b085f311a5961ba4351cafa57ff0c5aa418ac6f05a1d6
 
 build:
   number: 0
@@ -15,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - imageio >=2.10.1
     - magicgui >=0.7.3
     - matplotlib-base >=3.4
