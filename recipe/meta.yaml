@@ -9,18 +9,18 @@ source:
   sha256: e97086084b1a6d0fd4abcffd08f371c5a91759ee175153be6c6027b90aec9771
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - imageio >=2.10.1
     - magicgui >=0.7.3
     - matplotlib-base >=3.4
@@ -35,6 +35,8 @@ requirements:
     - tqdm >=4.57.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - skan
 
