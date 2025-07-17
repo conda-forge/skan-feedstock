@@ -26,7 +26,7 @@ requirements:
     - magicgui >=0.7.3
     - matplotlib-base >=3.4
     - networkx >=2.7
-    - numba >=0.53
+    - numba >=0.58
     - numpy >=1.25
     - openpyxl >=2.6
     - pandas >=2.0.2
