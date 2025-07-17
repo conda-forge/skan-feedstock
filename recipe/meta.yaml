@@ -10,7 +10,7 @@ source:
   sha256: 5c9e5c2dc169f2f4972b085f311a5961ba4351cafa57ff0c5aa418ac6f05a1d6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -36,6 +36,8 @@ requirements:
     - tqdm >=4.57.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - skan
 
