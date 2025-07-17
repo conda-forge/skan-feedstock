@@ -1,4 +1,4 @@
-{% set version = "0.12.3" %}
+{% set version = "0.13.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/skan/skan-{{ version }}.tar.gz
-  sha256: d4c5a15213f593b8afb15b3b7fe0fb2bbc9e6e2e2eccdbfda3b54811737ebfce
+  sha256: 0c184a369c391b89bfbac919f78c0c89f1e39c56a4aecd7be9322f6d046ad762
 
 build:
   number: 0
