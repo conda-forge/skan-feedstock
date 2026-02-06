@@ -155,6 +155,3 @@ Feedstock Maintainers
 
 * [@jni](https://github.com/jni/)
 
-
-<!-- dummy commit to enable rerendering -->
-
