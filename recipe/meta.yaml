@@ -1,5 +1,5 @@
-{% set version = "0.13.0" %}
-{% set python_min = "3.9" %}
+{% set version = "0.13.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: skan
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/skan/skan-{{ version }}.tar.gz
-  sha256: 0c184a369c391b89bfbac919f78c0c89f1e39c56a4aecd7be9322f6d046ad762
+  sha256: d5a0f4eb30e88b3113ad419f87577e7b6412bcf14f61393b7968947b3ab60db0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
